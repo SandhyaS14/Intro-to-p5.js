@@ -1,42 +1,45 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Intro p5.js</title>
+    <meta charset="UTF-4">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p5.js selfie</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
-
-  <style type="text/css">
-  h3
-  {
-    font-size: 25px !important;
-  }
-  canvas {
-  	border:1px dashed black;
-  }
-  body{
-    padding: 50px;
-  }
-  </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
 </head>
-
+<style rel="stylesheet" type="text/css">
+body {
+    background: linear-gradient(deepskyblue 0%, pink 50%, red 100%);
+    background-repeat: no-repeat;
+    background-size:auto;
+    height: 700px;
+    border: 5px green solid;
+    margin: 100px;
+    text-align: center;
+}
+hr {
+    height: 5px;
+    background-color: orange;
+}
+canvas {
+    border: 1px solid black;
+    background-color: white;
+}
+</style>
 <body>
-<div class="container">
-	<h3 class="btn btn-primary">Introduction to p5.js</h3>
-	<hr>
-    <label>Filter Color: </label>
-    <input type="color" id="filtercolor">
-    <br>
-    <button class="btn btn-warning" onclick="apply()">Apply Filter</button>
-    <button onclick="snap()" class="btn btn-success">Take Snapshot</button>
-    <br>
-</div>
-
-<script src="main.js"></script>
+    <div class="container">
+        <h3 class="btn btn-primary">Introduction to p5.js</h3>
+        <hr>
+        <label>Filter Color: </label>
+        <input type="color" id="filtercolor">
+        <br>
+        <button class="btn btn-warning" onclick="apply()">Apply Filter</button>
+        <button onclick="snap()" class="btn btn-success">Take Snapshot</button>
+        <br>
+    </div>
+    <script src="main.js"></script>    
 </body>
-
 </html>
-
